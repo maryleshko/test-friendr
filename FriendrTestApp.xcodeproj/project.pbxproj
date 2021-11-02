@@ -11,13 +11,13 @@
 		CEAE805D27317AD300DFAAD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEAE805C27317AD300DFAAD8 /* Assets.xcassets */; };
 		CEAE806027317AD300DFAAD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEAE805E27317AD300DFAAD8 /* LaunchScreen.storyboard */; };
 		CEAE807D273182AD00DFAAD8 /* BananaPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAE8074273182AD00DFAAD8 /* BananaPresenter.swift */; };
-		CEAE8080273182AD00DFAAD8 /* BananaModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAE8077273182AD00DFAAD8 /* BananaModels.swift */; };
 		CEAE8081273182AD00DFAAD8 /* BananaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAE8078273182AD00DFAAD8 /* BananaViewController.swift */; };
 		CEAE8082273182AD00DFAAD8 /* BananaProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAE8079273182AD00DFAAD8 /* BananaProtocols.swift */; };
 		CEAE8083273182AD00DFAAD8 /* BananaBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAE807A273182AD00DFAAD8 /* BananaBuilder.swift */; };
 		CEAE8084273182AD00DFAAD8 /* BananaInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAE807B273182AD00DFAAD8 /* BananaInteractor.swift */; };
 		CEAE8097273188D700DFAAD8 /* BananaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAE8094273188D700DFAAD8 /* BananaView.swift */; };
 		CEAE809927318AE900DFAAD8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAE809827318AE800DFAAD8 /* NetworkManager.swift */; };
+		CEAE809C2731A73600DFAAD8 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAE809B2731A73600DFAAD8 /* String+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,13 +27,13 @@
 		CEAE805F27317AD300DFAAD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEAE806127317AD300DFAAD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEAE8074273182AD00DFAAD8 /* BananaPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BananaPresenter.swift; sourceTree = "<group>"; };
-		CEAE8077273182AD00DFAAD8 /* BananaModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BananaModels.swift; sourceTree = "<group>"; };
 		CEAE8078273182AD00DFAAD8 /* BananaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BananaViewController.swift; sourceTree = "<group>"; };
 		CEAE8079273182AD00DFAAD8 /* BananaProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BananaProtocols.swift; sourceTree = "<group>"; };
 		CEAE807A273182AD00DFAAD8 /* BananaBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BananaBuilder.swift; sourceTree = "<group>"; };
 		CEAE807B273182AD00DFAAD8 /* BananaInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BananaInteractor.swift; sourceTree = "<group>"; };
 		CEAE8094273188D700DFAAD8 /* BananaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BananaView.swift; sourceTree = "<group>"; };
 		CEAE809827318AE800DFAAD8 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		CEAE809B2731A73600DFAAD8 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +69,7 @@
 				CEAE805327317ACF00DFAAD8 /* AppDelegate.swift */,
 				CEAE8067273180FD00DFAAD8 /* BananaView */,
 				CEAE809A273193D200DFAAD8 /* Managers */,
+				CEAE809D2731A74000DFAAD8 /* Extensions */,
 				CEAE805C27317AD300DFAAD8 /* Assets.xcassets */,
 				CEAE805E27317AD300DFAAD8 /* LaunchScreen.storyboard */,
 				CEAE806127317AD300DFAAD8 /* Info.plist */,
@@ -80,7 +81,6 @@
 			isa = PBXGroup;
 			children = (
 				CEAE8074273182AD00DFAAD8 /* BananaPresenter.swift */,
-				CEAE8077273182AD00DFAAD8 /* BananaModels.swift */,
 				CEAE8078273182AD00DFAAD8 /* BananaViewController.swift */,
 				CEAE8079273182AD00DFAAD8 /* BananaProtocols.swift */,
 				CEAE807A273182AD00DFAAD8 /* BananaBuilder.swift */,
@@ -96,6 +96,14 @@
 				CEAE809827318AE800DFAAD8 /* NetworkManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		CEAE809D2731A74000DFAAD8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CEAE809B2731A73600DFAAD8 /* String+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,13 +176,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEAE809C2731A73600DFAAD8 /* String+Extensions.swift in Sources */,
 				CEAE809927318AE900DFAAD8 /* NetworkManager.swift in Sources */,
 				CEAE8082273182AD00DFAAD8 /* BananaProtocols.swift in Sources */,
 				CEAE8083273182AD00DFAAD8 /* BananaBuilder.swift in Sources */,
 				CEAE8097273188D700DFAAD8 /* BananaView.swift in Sources */,
 				CEAE8081273182AD00DFAAD8 /* BananaViewController.swift in Sources */,
 				CEAE807D273182AD00DFAAD8 /* BananaPresenter.swift in Sources */,
-				CEAE8080273182AD00DFAAD8 /* BananaModels.swift in Sources */,
 				CEAE8084273182AD00DFAAD8 /* BananaInteractor.swift in Sources */,
 				CEAE805427317ACF00DFAAD8 /* AppDelegate.swift in Sources */,
 			);

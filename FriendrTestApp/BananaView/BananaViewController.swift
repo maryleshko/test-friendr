@@ -10,7 +10,6 @@ import UIKit
 
 class BananaViewController: UIViewController {
     var presenter: BananaPresentationLogic?
-
     private let rootView = BananaView()
 
     override func loadView() {
@@ -19,10 +18,12 @@ class BananaViewController: UIViewController {
     }
 
     override func viewDidLoad() {
-        presenter?.fetchBananaCount()
+        presenter?.fetchWordsCount()
     }
-
 }
 
 extension BananaViewController: BananaDisplayLogic {
+    func displayWordsCount(_ text: String) {
+        rootView.model = BananaView.Model(text: text)
+    }
 }
