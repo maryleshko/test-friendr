@@ -13,8 +13,11 @@ protocol BananaBusinessLogic: AnyObject {
 }
 
 protocol BananaPresentationLogic: AnyObject {
-    func fetchBananaCount()
+    func fetchWordsCount()
+    func presentWordsCount(_ wordCount: Int)
+    func presentError()
 }
 
 protocol BananaDisplayLogic: AnyObject {
+    func displayWordsCount(_ text: String)
 }
